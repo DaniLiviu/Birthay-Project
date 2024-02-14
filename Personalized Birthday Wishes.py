@@ -1,28 +1,17 @@
 #Asking what is your Name
-print("Hi what's your name?")
-user_name = input()
-#Aks what year where you bonn in.
-print("Hello {} What year where you bron in (ex:1900)? ".format(user_name))
-age = int(input())
+user_name = input("Hi what's your name? ")
+#Aks what year was born.
+age = int(input(f"Hello {user_name} What year the recipient was born in?(ex:1900)? "))
+#Ask what is the Recipient's Name
+user_name1 = input("What is the recipient's Name? ")
+#Aks customer to add special message.
+message = input("Please add a special message/mempory that you would like\nto shard with the recipient : ")
+print()
+print()
 a = 2024
 b = age
-user_age = int((a) - (b))
-print()
-print()
-print('Hello', user_name, "Let's celebrate your", user_age, "years of awesomeness!")
-print()
-print('Wishing you a day filled with joy and laughter as you turn', user_age,'year old!!')
-print()
-print ("Just like a fine wine, you seem to get better with age. Happy birthday!")
-print()
-print()
-print("With love and best wishes,")
-print("Daniel.")
-
-
-
-
-
-
-
-
+user_age = a - b
+print(f"Hello, {user_name1}, Let's celebrate your {user_age}, years of awesomeness!\n")
+print(f'Wishing you a day filled with joy and laughter as you turn', {user_age},'year old!!\n')
+print(message)
+print(f"\n\nWith love and best wishes,\n\n\n {user_name}")
